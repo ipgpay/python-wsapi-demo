@@ -1,0 +1,15 @@
+<h1>form test</h1>
+
+{% if args %}
+    args!!!
+{% endif %}
+
+<form method="post" action="{{ action }}">
+    {% csrf_token %}
+
+    <ul>
+        {{ form.as_ul }}
+    </ul>
+
+    <input type="submit" value="send">
+</form>

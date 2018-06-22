@@ -1,0 +1,5 @@
+wsapisite/wsapisite/settings.py
+.idea/
+venv/
+*.pyc
+__pycache__

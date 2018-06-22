@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Receipt</title>
+</head>
+<body>
+last_order: <pre>{{ request.session.last_order }}</pre>
+
+<hr>
+last settlement:
+<pre>{{ request.session.last_settlement }}</pre>
+
+<hr>
+last credit:
+<pre>{{ request.session.last_credit }}</pre>
+
+<hr>
+<a href="../">back to index</a>
+</body>
+</html>

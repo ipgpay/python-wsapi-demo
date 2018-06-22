@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crediting an order</title>
+</head>
+<body>
+    <h1>Credit an order</h1>
+    <h2>note: you should only credit settlement trans_id or sale trans_id.</h2>
+
+    <form method="post" action="{{ action }}">
+        {% csrf_token %}
+
+        <ul>
+            {{ form.as_ul }}
+        </ul>
+
+        <input type="submit" value="send">
+    </form>
+</body>
+</html>
